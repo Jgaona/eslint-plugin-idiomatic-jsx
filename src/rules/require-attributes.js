@@ -1,12 +1,13 @@
-import { getProp, getPropValue, elementType } from 'jsx-ast-utils';
-import shouldCheckComponent from '../shouldCheckComponent';
+import { getProp, getPropValue, elementType } from "jsx-ast-utils";
+import shouldCheckComponent from "../shouldCheckComponent";
 
-export default {
+module.exports = {
   create: (context) => ({
     JSXOpeningElement: (node) => {
       const nodeType = elementType(node);
       const options = context.options[0] || {};
-      const messageBuilder = context.options[1] ||
+      const messageBuilder =
+        context.options[1] ||
         ((n, a) => `<${n}> components must have a valid "${a}" attribute.`);
 
       Object.keys(options).forEach((attribute) => {
@@ -18,11 +19,11 @@ export default {
           if (!prop || !propValue) {
             context.report({
               node,
-              message: messageBuilder(nodeType, attribute)
+              message: messageBuilder(nodeType, attribute),
             });
           }
         }
       });
-    }
-  })
+    },
+  }),
 };
