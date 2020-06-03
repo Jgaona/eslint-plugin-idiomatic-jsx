@@ -11,7 +11,7 @@ This rule takes one array argument of type object that defines the list of compo
 ```
 {
   "rules": {
-    "idiomatic-jsx/prevent-components": [ 2, [ 'input', 'button' ]
+    "idiomatic-jsx-u/prevent-components": [ 2, [ 'input', 'button' ]
   }
 }
 ```
@@ -34,7 +34,7 @@ You may also pass in a 3rd option to change the default message that is output o
 ```
 {
   "rules": {
-    "idiomatic-jsx/require-attributes": [ 2, [ "Foo", "Bar" ],
+    "idiomatic-jsx-u/require-attributes": [ 2, [ "Foo", "Bar" ],
       (nodeType, attribute) => `<${nodeType}> components are not allowed.  Use our custom component instead.`
     }]
   }

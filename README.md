@@ -14,6 +14,8 @@
   </a>
 </p>
 
+This is just an updated version of the plugin that works with eslint v7.1.0. All the credits to [danrigsby](https://github.com/danrigsby) that created the original [project](https://github.com/danrigsby/eslint-plugin-idiomatic-jsx).
+
 ESLint jsx plugin to bring more idiomatic control over JSX elements.
 
 These rules allow you to create idiomatic styling over JSX in your projects.  For instance, enforcing or preventing certain attributes on JSX elements.  The goal is to extend the rule sets provided by [eslint-plugin-react](https://github.com/yannickcr/eslint-plugin-react) and [eslint-plugin-jsx-a11y](https://github.com/evcohen/eslint-plugin-jsx-a11y) to give you more control over how JSX is used.
@@ -51,7 +53,7 @@ Add `idiomatic-jsx` to the plugins section of your `.eslintrc` configuration fil
 ```javascript
 {
   "plugins": [
-    "idiomatic-jsx"
+    "idiomatic-jsx-u"
   ]
 }
 ```
@@ -61,7 +63,7 @@ Configure the rules you want to use under the rules section.
 ```javascript
 {
   "rules": {
-    "idiomatic-jsx/rule-name": [ 2, {
+    "idiomatic-jsx-u/rule-name": [ 2, {
       // options
     } ]
   }

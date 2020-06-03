@@ -11,7 +11,7 @@ This rule takes one object argument of type object that defines an associative a
 ```
 {
   "rules": {
-    "idiomatic-jsx/require-attributes": [ 2, {
+    "idiomatic-jsx-u/require-attributes": [ 2, {
       "id": [ "a", "button", "input" ]
     }]
   }
@@ -36,7 +36,7 @@ By default, the attributes are required on any item in the defined array.  This 
 ```
 {
   "rules": {
-    "idiomatic-jsx/require-attributes": [ 2, {
+    "idiomatic-jsx-u/require-attributes": [ 2, {
       "id": {
         blacklist: true,
         components: [ "Foo", "Bar" ]
@@ -68,7 +68,7 @@ You may also pass in a 3rd option to change the default message that is output o
 ```
 {
   "rules": {
-    "idiomatic-jsx/require-attributes": [ 2, [ "Foo", "Bar" ],
+    "idiomatic-jsx-u/require-attributes": [ 2, [ "Foo", "Bar" ],
       (nodeType, attribute) => `<${nodeType}> components must contain a "${attribute}" so they can be discovered by automated tests`
     }]
   }

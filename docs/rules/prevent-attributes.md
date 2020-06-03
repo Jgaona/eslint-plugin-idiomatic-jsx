@@ -11,7 +11,7 @@ This rule takes one object argument of type object that defines an associative a
 ```
 {
   "rules": {
-    "idiomatic-jsx/prevent-attributes": [ 2, {
+    "idiomatic-jsx-u/prevent-attributes": [ 2, {
       "onClick": [ "div", "span" ],
       "onBlur": [ "div", "span" ]
     }]
@@ -41,7 +41,7 @@ By default, the attributes are prevents on any item in the defined array.  This 
 ```
 {
   "rules": {
-    "idiomatic-jsx/prevent-attributes": [ 2, {
+    "idiomatic-jsx-u/prevent-attributes": [ 2, {
       "onClick": {
         blacklist: true,
         components: [ "a", "button" ]
@@ -78,7 +78,7 @@ You may also pass in a 3rd option to change the default message that is output o
 ```
 {
   "rules": {
-    "idiomatic-jsx/require-attributes": [ 2, [ "Foo", "Bar" ],
+    "idiomatic-jsx-u/require-attributes": [ 2, [ "Foo", "Bar" ],
       (nodeType, attribute) => `<${n}> components must not have a "${a}" attribute. This breaks accessibility.`
     }]
   }
