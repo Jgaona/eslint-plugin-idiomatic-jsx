@@ -37,10 +37,10 @@ Next, install eslint-plugin-idiomatic-jsx:
 
 ``` sh
 # npm
-npm install eslint-plugin-idiomatic-jsx-r --save-dev
+npm install eslint-plugin-idiomatic-jsx-u --save-dev
 
 # yarn
-yarn add eslint-plugin-idiomatic-jsx-r --dev
+yarn add eslint-plugin-idiomatic-jsx-u --dev
 ```
 
 Note: If you installed ESLint globally then you must also install eslint-plugin-idiomatic-jsx globally.

@@ -1,12 +1,12 @@
 {
-  "name": "eslint-plugin-idiomatic-jsx",
-  "version": "1.1.1",
+  "name": "eslint-plugin-idiomatic-jsx-u",
+  "version": "1.1.2",
   "description": "Eslint jsx plugin to bring more idiomatic control over jsx",
   "main": "lib/index.js",
   "files": [
     "/lib"
   ],
-  "repository": "https://github.com/danrigsby/eslint-plugin-idiomatic-jsx",
+  "repository": "https://github.com/Jgaona/eslint-plugin-idiomatic-jsx",
   "author": "Dan Rigsby <danrigsby@gmail.com>",
   "license": "MIT",
   "keywords": [
